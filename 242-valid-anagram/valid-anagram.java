@@ -1,4 +1,4 @@
-/*class Solution {
+class Solution {
     public boolean isAnagram(String s, String t) {
         HashMap<Character,Integer> hm= new HashMap<>();
         if(s.length()!=t.length())
@@ -9,7 +9,7 @@
             hm.put(s.charAt(i),hm.getOrDefault(s.charAt(i),0)+1);
         }
         for(int i=0;i<t.length();i++)
-        {    char ch=s.charAt(i);
+        {    char ch=t.charAt(i);
             if(hm.get(ch)!=null)
             {
                 if(hm.get(ch)==1)
@@ -24,8 +24,8 @@
             return hm.isEmpty();
         }
     
-}*/
-import java.util.Arrays;
+}
+/*import java.util.Arrays;
 
 class Solution {
     public boolean isAnagram(String s, String t) {
@@ -37,4 +37,4 @@ class Solution {
         
         return Arrays.equals(sChars, tChars);
     }
-}
+}*/
