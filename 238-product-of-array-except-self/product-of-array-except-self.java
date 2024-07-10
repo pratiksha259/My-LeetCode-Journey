@@ -14,7 +14,7 @@ class Solution {
         }
         
         // If more than one zero, all elements in the result are zero
-        if (c > 1) {
+       if (c>1) {
             return a; // all elements in 'a' are already zero
         }
         
