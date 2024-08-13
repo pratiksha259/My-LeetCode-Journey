@@ -25,8 +25,11 @@ class Solution {
         curr.next=head;
         k=k%l;
         l=l-k;
-         for (int c = 1; c < l; c++) {
-            temp = temp.next;
+        int c=1;
+        while(c<l)
+        {
+          temp=temp.next;
+          c++;
         }
         head=temp.next;
         temp.next=null;
